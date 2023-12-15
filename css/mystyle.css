@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
+    background-size: cover;
+    background-image: url(./img/MMSU_facade.jpg);
+}
+.container{
+    width: 100%;
+    max-width: 650px;
+    background-color: rgba(65, 62, 62, 0.247);
+    padding: 28px;
+    margin: 28px;
+    border-radius: 10px;
+
+}
+.title{
+    font-size: 29px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 6px;
+    color: rgb(0, 0, 0);
+    text-shadow: (3px 3px 3px) ;
+    border-bottom: 1px solid black;
+}
+.main-user{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.user{
+    display: inline-flex;
+    flex-wrap: center;
+    width: 100%;
+    padding-bottom: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.616);
+    padding: 2px;
+}
+.user label{
+    width: 95%;
+    color: rgb(248, 248, 248);
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+    font-weight: bolder;
+
+}
+.user input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 0 10px;
+    border-block-end-color: rgb(0, 0, 0);
+
+}
+.gen-title{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 600;
+    border: 1px solid rgba(0, 0, 0, 0.616);
+    padding: 5px;
+}
+.gender{
+    margin: 20px 0;
+    color: rgb(255, 255, 255);
+
+}
+.gender label{
+    padding: 0 20px 0 5px;
+}
+.form-submit{
+    margin-top: 20px;
+}
+.form-submit input{ 
+    display: block;
+    width: 600px;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.473);
+}
+
+ @media(max-width:410px){
+
+   .container{
+    width: 100%;
+    height: 100%;
+   }
+
+   .title{
+
+    font-size: 5vw;
+    width: 100%;
+
+   }
+
+   .main-user{
+  display: flex;
+  flex-direction: column;
+  width: 190%;
+  height: 100%;
+   }
+
+   .user{
+
+    display: flex;
+    flex-direction: column;
+   }
+
+   .user label{
+    display: flex;
+    flex-direction: column;
+
+   }
+
+   .user input{
+
+    display: flex;
+    flex-direction: column;
+
+
+   }
+
+   .gender{
+
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+
+   }
+
+
+ 
+ }
